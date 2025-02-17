@@ -1,2 +1,6 @@
 [init]
 	defaultBranch = main
+[user]
+	signingkey = A5050ED0772CAE23D49165637C8BF6486701D2D8
+[commit]
+	gpgsign = true
