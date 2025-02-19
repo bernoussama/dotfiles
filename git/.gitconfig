@@ -1,7 +1,7 @@
 [init]
 	defaultBranch = main
 [user]
-	signingkey = A5050ED0772CAE23D49165637C8BF6486701D2D8
+	signingkey = 0F97C6256C04CE0A65DC5AC196C75780B6F6A4B8
 	email = oussama.bernou@outlook.com
 	name = bernoussama
 [commit]
