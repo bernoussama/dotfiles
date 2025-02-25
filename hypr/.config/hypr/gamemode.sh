@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
+# check if power-mode is set to power-saver
+POWERMODE=$(powerprofilesctl get | grep power-saver)
+if [ "$POWERMODE" = "power-saver" ]; then
+  powerprofilesctl set balanced
+else
+  powerprofilesctl set power-saver
+fi
 if [ "$HYPRGAMEMODE" = 1 ]; then
   hyprctl --batch "\
         keyword animations:enabled 0;\

@@ -6,3 +6,5 @@
 	name = bernoussama
 [commit]
 	gpgsign = true
+[branch]
+	sort = -committerdate
